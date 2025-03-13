@@ -67,7 +67,7 @@ export function Header() {
             {navigation.map(item => <Link key={item.name} to={item.href} className={cn("px-3 py-2 text-sm font-medium rounded-md transition-all duration-300", location.pathname === item.href ? "text-cyber-blue bg-cyber-blue/10" : "text-cyber-text-secondary hover:text-cyber-blue hover:bg-cyber-blue/5")}>
                 {item.name}
               </Link>)}
-            <Button variant="neon" size="lg" onClick={() => window.open("https://discord.gg/6WWTT2bxwE", "_blank")} className="ml-4 animate-pulse-glow ml-8">
+            <Button variant="neon" size="lg" onClick={() => window.open("https://discord.gg/6WWTT2bxwE", "_blank")} className="ml-4 animate-pulse-glow ml-9">
               <MessageSquare className="mr-2 h-5 w-5" />
               Join Discord
             </Button>
