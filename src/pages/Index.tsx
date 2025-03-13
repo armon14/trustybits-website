@@ -1,12 +1,28 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
+import { Features } from "@/components/Features";
+import { Events } from "@/components/Events";
+import { Services } from "@/components/Services";
+import { Footer } from "@/components/Footer";
+import { useEffect } from "react";
 
 const Index = () => {
+  // Scroll to top on page load
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-cyber-black text-white overflow-x-hidden">
+      <Header />
+      <main>
+        <Hero />
+        <Features />
+        <Events />
+        <Services />
+      </main>
+      <Footer />
     </div>
   );
 };

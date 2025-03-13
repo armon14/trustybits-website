@@ -1,101 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 264 67% 62%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 180 100% 60%;
+    --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --radius: 0.5rem;
   }
 }
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border selection:bg-cyber-blue/10 selection:text-cyber-blue;
+  }
+  
+  body {
+    @apply bg-cyber-black text-cyber-text-primary antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
   }
 
-  body {
-    @apply bg-background text-foreground;
+  html {
+    @apply scroll-smooth;
   }
+}
+
+@layer components {
+  .cyberpunk-grid {
+    @apply relative before:content-[''] before:absolute before:inset-0 before:bg-cyber-grid before:bg-[length:30px_30px] before:opacity-10 before:z-0;
+  }
+  
+  .glass-card {
+    @apply relative backdrop-blur-md bg-cyber-gray/50 border border-cyber-blue/20 shadow-lg;
+  }
+  
+  .neon-border {
+    @apply relative before:absolute before:inset-0 before:p-[1px] before:rounded-lg before:bg-gradient-to-r before:from-cyber-blue before:to-cyber-purple before:-z-10;
+  }
+  
+  .medieval-divider {
+    @apply relative flex items-center justify-center my-8;
+  }
+  
+  .medieval-divider::before, 
+  .medieval-divider::after {
+    @apply content-[''] block h-[2px] flex-grow bg-gradient-to-r from-transparent via-medieval-gold/70 to-transparent;
+  }
+  
+  .medieval-divider::before {
+    @apply mr-4;
+  }
+  
+  .medieval-divider::after {
+    @apply ml-4;
+  }
+}
+
+.cyber-heading {
+  @apply font-cyber uppercase tracking-wider;
+  text-shadow: 0 0 5px rgba(51, 255, 255, 0.5), 0 0 10px rgba(51, 255, 255, 0.3);
+}
+
+.medieval-heading {
+  @apply font-medieval uppercase tracking-wide;
+  text-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+}
+
+.text-glitch {
+  position: relative;
+}
+
+.text-glitch::before,
+.text-glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.text-glitch::before {
+  left: 2px;
+  text-shadow: -1px 0 rgba(255, 51, 170, 0.7);
+  clip: rect(44px, 450px, 56px, 0);
+  animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+.text-glitch::after {
+  left: -2px;
+  text-shadow: -1px 0 rgba(51, 255, 255, 0.7);
+  clip: rect(44px, 450px, 56px, 0);
+  animation: glitch-anim2 5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+  0% {
+    clip: rect(31px, 9999px, 94px, 0);
+  }
+  10% {
+    clip: rect(112px, 9999px, 76px, 0);
+  }
+  20% {
+    clip: rect(85px, 9999px, 77px, 0);
+  }
+  30% {
+    clip: rect(144px, 9999px, 91px, 0);
+  }
+  40% {
+    clip: rect(40px, 9999px, 137px, 0);
+  }
+  50% {
+    clip: rect(115px, 9999px, 98px, 0);
+  }
+  60% {
+    clip: rect(140px, 9999px, 73px, 0);
+  }
+  70% {
+    clip: rect(115px, 9999px, 91px, 0);
+  }
+  80% {
+    clip: rect(107px, 9999px, 77px, 0);
+  }
+  90% {
+    clip: rect(15px, 9999px, 63px, 0);
+  }
+  100% {
+    clip: rect(48px, 9999px, 46px, 0);
+  }
+}
+
+@keyframes glitch-anim2 {
+  0% {
+    clip: rect(65px, 9999px, 119px, 0);
+  }
+  10% {
+    clip: rect(133px, 9999px, 144px, 0);
+  }
+  20% {
+    clip: rect(63px, 9999px, 74px, 0);
+  }
+  30% {
+    clip: rect(142px, 9999px, 98px, 0);
+  }
+  40% {
+    clip: rect(104px, 9999px, 93px, 0);
+  }
+  50% {
+    clip: rect(147px, 9999px, 50px, 0);
+  }
+  60% {
+    clip: rect(67px, 9999px, 123px, 0);
+  }
+  70% {
+    clip: rect(142px, 9999px, 111px, 0);
+  }
+  80% {
+    clip: rect(128px, 9999px, 74px, 0);
+  }
+  90% {
+    clip: rect(54px, 9999px, 84px, 0);
+  }
+  100% {
+    clip: rect(81px, 9999px, 83px, 0);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121218;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #33FFFF33;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #33FFFF66;
+}
+
+/* Page transition animations */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Prevent text selection for decorative elements */
+.no-select {
+  user-select: none;
 }
