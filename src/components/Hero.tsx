@@ -32,7 +32,7 @@ export function Hero() {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <Button variant="default" size="xl" className="group" onClick={() => window.open("https://discord.gg/trustybits", "_blank")}>
+              <Button variant="default" size="xl" className="group" onClick={() => window.open("https://discord.gg/6WWTT2bxwE", "_blank")}>
                 <MessageSquare className="mr-2 h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
                 Join Our Discord
               </Button>
