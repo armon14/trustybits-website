@@ -1,19 +1,15 @@
-
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Sword, Castle, Shield, Crown, MessageSquare } from "lucide-react";
 import { useEffect } from "react";
-
 const AboutPage = () => {
   // Scroll to top on page load
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  return (
-    <div className="min-h-screen bg-cyber-black text-white overflow-x-hidden">
+  return <div className="min-h-screen bg-cyber-black text-white overflow-x-hidden">
       <Header />
       
       <main className="pt-28 pb-20">
@@ -71,22 +67,13 @@ const AboutPage = () => {
               <div className="relative z-10 h-full flex items-center justify-center">
                 <div className="text-center">
                   <div className="w-20 h-20 mx-auto mb-6">
-                    <img 
-                      src="/lovable-uploads/ba3bc776-07be-4023-8e74-03fdd75a7f71.png" 
-                      alt="Trustybits Logo" 
-                      className="w-full h-auto"
-                    />
+                    <img src="/lovable-uploads/ba3bc776-07be-4023-8e74-03fdd75a7f71.png" alt="Trustybits Logo" className="w-full h-auto" />
                   </div>
                   <h2 className="text-2xl font-cyber mb-4">Join the Adventure</h2>
                   <p className="text-cyber-text-secondary mb-6">
                     Connect with like-minded professionals, access exclusive resources, and participate in our weekly events.
                   </p>
-                  <Button 
-                    variant="default" 
-                    size="lg"
-                    className="animate-pulse-glow"
-                    onClick={() => window.open("https://discord.gg/trustybits", "_blank")}
-                  >
+                  <Button variant="default" size="lg" onClick={() => window.open("https://discord.gg/trustybits", "_blank")} className="mi-4 animate-pulse-glow">
                     <MessageSquare className="mr-2 h-5 w-5" />
                     Join Our Discord
                   </Button>
@@ -104,7 +91,9 @@ const AboutPage = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="glass-card rounded-lg p-6 animate-fade-in" style={{ animationDelay: "0ms" }}>
+              <div className="glass-card rounded-lg p-6 animate-fade-in" style={{
+              animationDelay: "0ms"
+            }}>
                 <div className="rounded-full bg-cyber-blue/10 border border-cyber-blue/20 w-12 h-12 flex items-center justify-center mb-4">
                   <Castle className="h-6 w-6 text-cyber-blue" />
                 </div>
@@ -112,7 +101,9 @@ const AboutPage = () => {
                 <p className="text-cyber-text-secondary">Our training ground for real-world projects and skill development.</p>
               </div>
               
-              <div className="glass-card rounded-lg p-6 animate-fade-in" style={{ animationDelay: "100ms" }}>
+              <div className="glass-card rounded-lg p-6 animate-fade-in" style={{
+              animationDelay: "100ms"
+            }}>
                 <div className="rounded-full bg-cyber-purple/10 border border-cyber-purple/20 w-12 h-12 flex items-center justify-center mb-4">
                   <MessageSquare className="h-6 w-6 text-cyber-purple" />
                 </div>
@@ -120,7 +111,9 @@ const AboutPage = () => {
                 <p className="text-cyber-text-secondary">A supportive network of peers for knowledge sharing and collaboration.</p>
               </div>
               
-              <div className="glass-card rounded-lg p-6 animate-fade-in" style={{ animationDelay: "200ms" }}>
+              <div className="glass-card rounded-lg p-6 animate-fade-in" style={{
+              animationDelay: "200ms"
+            }}>
                 <div className="rounded-full bg-cyber-pink/10 border border-cyber-pink/20 w-12 h-12 flex items-center justify-center mb-4">
                   <Crown className="h-6 w-6 text-cyber-pink" />
                 </div>
@@ -128,7 +121,9 @@ const AboutPage = () => {
                 <p className="text-cyber-text-secondary">Regular events for learning, networking, and skill enhancement.</p>
               </div>
               
-              <div className="glass-card rounded-lg p-6 animate-fade-in" style={{ animationDelay: "300ms" }}>
+              <div className="glass-card rounded-lg p-6 animate-fade-in" style={{
+              animationDelay: "300ms"
+            }}>
                 <div className="rounded-full bg-medieval-gold/10 border border-medieval-gold/20 w-12 h-12 flex items-center justify-center mb-4">
                   <Sword className="h-6 w-6 text-medieval-gold" />
                 </div>
@@ -148,12 +143,7 @@ const AboutPage = () => {
               <p className="text-lg text-cyber-text-secondary mb-8">
                 Whether you're a seasoned adventurer or just starting your journey, there's a place for you in our community.
               </p>
-              <Button 
-                variant="medieval" 
-                size="xl" 
-                className="animate-pulse-glow"
-                onClick={() => window.open("https://discord.gg/trustybits", "_blank")}
-              >
+              <Button variant="medieval" size="xl" className="animate-pulse-glow" onClick={() => window.open("https://discord.gg/trustybits", "_blank")}>
                 <Shield className="mr-2 h-5 w-5" />
                 Embark on the Adventure
               </Button>
@@ -163,8 +153,6 @@ const AboutPage = () => {
       </main>
       
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default AboutPage;
