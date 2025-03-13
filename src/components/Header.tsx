@@ -102,7 +102,7 @@ export function Header() {
               variant="neon" 
               size="lg" 
               className="ml-4 animate-pulse-glow"
-              onClick={() => window.open("https://discord.gg/trustybits", "_blank")}
+              onClick={() => window.open("https://discord.gg/6WWTT2bxwE", "_blank")}
             >
               <MessageSquare className="mr-2 h-5 w-5" />
               Join Discord
