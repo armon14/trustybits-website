@@ -156,7 +156,7 @@ export function Header() {
               variant="default" 
               size="xl" 
               className="w-full animate-pulse-glow"
-              onClick={() => window.open("https://discord.gg/trustybits", "_blank")}
+              onClick={() => window.open("https://discord.gg/6WWTT2bxwE", "_blank")}
             >
               <MessageSquare className="mr-2 h-6 w-6" />
               Join Our Discord
