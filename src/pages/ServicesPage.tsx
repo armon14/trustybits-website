@@ -164,7 +164,7 @@ const ServicesPage = () => {
               <p className="text-lg text-cyber-text-secondary mb-8">
                 Contact us to discuss your needs and how our services can help you achieve your goals.
               </p>
-              <Button variant="medieval" size="xl" className="animate-pulse-glow">
+              <Button variant="medieval" size="xl">
                 <Mail className="mr-2 h-5 w-5" />
                 Contact Us Today
               </Button>
