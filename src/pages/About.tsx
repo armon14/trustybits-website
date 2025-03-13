@@ -73,7 +73,7 @@ const AboutPage = () => {
                   <p className="text-cyber-text-secondary mb-6">
                     Connect with like-minded professionals, access exclusive resources, and participate in our weekly events.
                   </p>
-                  <Button variant="default" size="lg" onClick={() => window.open("https://discord.gg/6WWTT2bxwE", "_blank")} className="mi-4 animate-pulse-glow">
+                  <Button variant="default" size="lg" onClick={() => window.open("https://discord.gg/6WWTT2bxwE", "_blank")} className="mi-6 animate-pulse-glow">
                     <MessageSquare className="mr-2 h-5 w-5" />
                     Join Our Discord
                   </Button>
