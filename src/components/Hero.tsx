@@ -72,7 +72,7 @@ export function Hero() {
                   <div className="absolute -top-3 -right-3 bg-cyber-blue text-cyber-black px-3 py-1 text-sm font-cyber rounded">
                     <span className="animate-text-flicker">LIVE</span>
                   </div>
-                  <div className="p-2 border border-cyber-blue/20 rounded-md bg-cyber-black/50 mb-4 animate-pulse-glow">
+                  <div className="p-2 border border-cyber-blue/20 rounded-md bg-cyber-black/50 mb-4">
                     <div className="flex items-center space-x-2 mb-2">
                       <div className="w-3 h-3 rounded-full bg-cyber-pink"></div>
                       <div className="w-3 h-3 rounded-full bg-cyber-accent"></div>
