@@ -87,7 +87,7 @@ export function Events() {
           <Button 
             variant="neon" 
             size="lg"
-            onClick={() => window.open("https://discord.gg/trustybits", "_blank")}
+            onClick={() => window.open("https://discord.gg/jeZqcuMVum?event=1349882515837685770", "_blank")}
           >
             Join Discord for Event Updates
           </Button>
