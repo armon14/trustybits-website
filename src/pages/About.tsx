@@ -73,7 +73,7 @@ const AboutPage = () => {
                   <p className="text-cyber-text-secondary mb-6">
                     Connect with like-minded professionals, access exclusive resources, and participate in our weekly events.
                   </p>
-                  <Button variant="default" size="lg" onClick={() => window.open("https://discord.gg/6WWTT2bxwE", "_blank")} className="mi-4">
+                  <Button variant="default" size="lg" onClick={() => window.open("https://discord.gg/KNCB3bTSTK", "_blank")} className="mi-4">
                     <MessageSquare className="mr-2 h-5 w-5" />
                     Join Our Discord
                   </Button>
@@ -143,7 +143,7 @@ const AboutPage = () => {
               <p className="text-lg text-cyber-text-secondary mb-8">
                 Whether you're a seasoned adventurer or just starting your journey, there's a place for you in our community.
               </p>
-              <Button variant="medieval" size="xl" onClick={() => window.open("https://discord.gg/trustybits", "_blank")} className="">
+              <Button variant="medieval" size="xl" onClick={() => window.open("https://discord.gg/zkBTTgF7TC", "_blank")} className="">
                 <Shield className="mr-2 h-5 w-5" />
                 Embark on the Adventure
               </Button>
