@@ -143,7 +143,7 @@ const AboutPage = () => {
               <p className="text-lg text-cyber-text-secondary mb-8">
                 Whether you're a seasoned adventurer or just starting your journey, there's a place for you in our community.
               </p>
-              <Button variant="medieval" size="xl" className="animate-pulse-glow" onClick={() => window.open("https://discord.gg/trustybits", "_blank")}>
+              <Button variant="medieval" size="xl" onClick={() => window.open("https://discord.gg/trustybits", "_blank")} className="">
                 <Shield className="mr-2 h-5 w-5" />
                 Embark on the Adventure
               </Button>
