@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { Menu, X, Discord } from "lucide-react";
+import { Menu, X, MessageSquare } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function Header() {
@@ -104,7 +104,7 @@ export function Header() {
               className="ml-4 animate-pulse-glow"
               onClick={() => window.open("https://discord.gg/trustybits", "_blank")}
             >
-              <Discord className="mr-2 h-5 w-5" />
+              <MessageSquare className="mr-2 h-5 w-5" />
               Join Discord
             </Button>
           </nav>
@@ -158,7 +158,7 @@ export function Header() {
               className="w-full animate-pulse-glow"
               onClick={() => window.open("https://discord.gg/trustybits", "_blank")}
             >
-              <Discord className="mr-2 h-6 w-6" />
+              <MessageSquare className="mr-2 h-6 w-6" />
               Join Our Discord
             </Button>
           </div>

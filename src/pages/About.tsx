@@ -3,7 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { Sword, Castle, Shield, Crown, Discord } from "lucide-react";
+import { Sword, Castle, Shield, Crown, MessageSquare } from "lucide-react";
 import { useEffect } from "react";
 
 const AboutPage = () => {
@@ -87,7 +87,7 @@ const AboutPage = () => {
                     className="animate-pulse-glow"
                     onClick={() => window.open("https://discord.gg/trustybits", "_blank")}
                   >
-                    <Discord className="mr-2 h-5 w-5" />
+                    <MessageSquare className="mr-2 h-5 w-5" />
                     Join Our Discord
                   </Button>
                 </div>
@@ -114,7 +114,7 @@ const AboutPage = () => {
               
               <div className="glass-card rounded-lg p-6 animate-fade-in" style={{ animationDelay: "100ms" }}>
                 <div className="rounded-full bg-cyber-purple/10 border border-cyber-purple/20 w-12 h-12 flex items-center justify-center mb-4">
-                  <Discord className="h-6 w-6 text-cyber-purple" />
+                  <MessageSquare className="h-6 w-6 text-cyber-purple" />
                 </div>
                 <h3 className="text-xl font-cyber mb-2">Community</h3>
                 <p className="text-cyber-text-secondary">A supportive network of peers for knowledge sharing and collaboration.</p>

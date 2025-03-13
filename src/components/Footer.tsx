@@ -2,7 +2,7 @@
 import { Container } from "@/components/ui/Container";
 import { Link } from "react-router-dom";
 import { 
-  Discord, 
+  MessageSquare, 
   Youtube, 
   Facebook, 
   Instagram, 
@@ -53,7 +53,7 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a href="https://discord.gg/trustybits" target="_blank" rel="noopener noreferrer" className="text-cyber-text-secondary hover:text-cyber-blue transition-colors">
-                <Discord className="h-5 w-5" />
+                <MessageSquare className="h-5 w-5" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer" className="text-cyber-text-secondary hover:text-cyber-blue transition-colors">
                 <Youtube className="h-5 w-5" />
@@ -128,7 +128,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="flex items-center text-cyber-text-secondary hover:text-cyber-blue transition-colors"
               >
-                <Discord className="h-5 w-5 mr-2" />
+                <MessageSquare className="h-5 w-5 mr-2" />
                 Join our Discord
               </a>
             </div>

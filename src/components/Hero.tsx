@@ -1,7 +1,7 @@
 
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { Shield, Sword, Castle, Discord } from "lucide-react";
+import { Shield, Sword, Castle, MessageSquare } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function Hero() {
@@ -41,7 +41,7 @@ export function Hero() {
                 className="group"
                 onClick={() => window.open("https://discord.gg/trustybits", "_blank")}
               >
-                <Discord className="mr-2 h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
+                <MessageSquare className="mr-2 h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
                 Join Our Discord
               </Button>
               <Button variant="medieval" size="xl">
