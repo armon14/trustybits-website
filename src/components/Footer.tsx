@@ -123,7 +123,7 @@ export function Footer() {
                 contact@trustybits.com
               </a>
               <a 
-                href="https://discord.gg/trustybits" 
+                href="https://discord.gg/6WWTT2bxwE" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center text-cyber-text-secondary hover:text-cyber-blue transition-colors"
