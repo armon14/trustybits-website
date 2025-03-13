@@ -1,12 +1,9 @@
-
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Shield, Sword, Castle, MessageSquare } from "lucide-react";
 import { cn } from "@/lib/utils";
-
 export function Hero() {
-  return (
-    <section className="relative pt-28 pb-20 overflow-hidden cyberpunk-grid min-h-screen flex items-center">
+  return <section className="relative pt-28 pb-20 overflow-hidden cyberpunk-grid min-h-screen flex items-center">
       {/* Background elements */}
       <div className="absolute inset-0 bg-cyber-glow z-0 opacity-60"></div>
       <div className="absolute w-1/2 h-1/2 -bottom-12 -right-12 bg-cyber-purple/10 rounded-full blur-3xl z-0"></div>
@@ -15,7 +12,7 @@ export function Hero() {
       <Container className="relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-cyber-blue/10 border border-cyber-blue/20 text-cyber-blue text-sm font-cyber animate-pulse-glow">
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-cyber-blue/10 border border-cyber-blue/20 text-cyber-blue text-sm font-cyber">
               <div className="flex items-center">
                 <span className="relative flex h-2 w-2 mr-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyber-blue opacity-75"></span>
@@ -35,12 +32,7 @@ export function Hero() {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <Button 
-                variant="default" 
-                size="xl" 
-                className="group"
-                onClick={() => window.open("https://discord.gg/trustybits", "_blank")}
-              >
+              <Button variant="default" size="xl" className="group" onClick={() => window.open("https://discord.gg/trustybits", "_blank")}>
                 <MessageSquare className="mr-2 h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
                 Join Our Discord
               </Button>
@@ -116,6 +108,5 @@ export function Hero() {
           </div>
         </div>
       </Container>
-    </section>
-  );
+    </section>;
 }
