@@ -77,7 +77,7 @@ export function Hero() {
                       <div className="w-3 h-3 rounded-full bg-cyber-pink"></div>
                       <div className="w-3 h-3 rounded-full bg-cyber-accent"></div>
                       <div className="w-3 h-3 rounded-full bg-cyber-blue"></div>
-                      <div className="flex-1 text-right text-xs text-cyber-text-secondary font-mono">76Forge Training Ground</div>
+                      <div className="flex-1 text-right text-xs text-cyber-text-secondary font-mono">Trustybits</div>
                     </div>
                     <div className="font-medieval text-xl text-center py-2 text-medieval-gold">Weekly Events</div>
                     <div className="space-y-3 mt-4">
