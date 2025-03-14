@@ -8,7 +8,7 @@ const events = [
   {
     id: 1,
     name: "Trusty Threads Thursdays",
-    description: "A bi-weekly AMA Discord event where community members can ask questions and discuss trending topics in tech.",
+    description: "A bi-weekly AMA Discord event where community members can ask questions and discuss trending topics.",
     day: "Thursday, March 27",
     frequency: "Bi-weekly",
     time: "10:30 PM EST",
