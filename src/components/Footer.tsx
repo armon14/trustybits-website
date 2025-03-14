@@ -52,22 +52,22 @@ export function Footer() {
               A community for tech professionals looking to level up through real-world projects and meaningful connections.
             </p>
             <div className="flex space-x-4">
-              <a href="https://discord.gg/trustybits" target="_blank" rel="noopener noreferrer" className="text-cyber-text-secondary hover:text-cyber-blue transition-colors">
+              <a href="https://discord.gg/KNCB3bTSTK" target="_blank" rel="noopener noreferrer" className="text-cyber-text-secondary hover:text-cyber-blue transition-colors">
                 <MessageSquare className="h-5 w-5" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="text-cyber-text-secondary hover:text-cyber-blue transition-colors">
+              <a href="https://www.youtube.com/@trustybits76" target="_blank" rel="noopener noreferrer" className="text-cyber-text-secondary hover:text-cyber-blue transition-colors">
                 <Youtube className="h-5 w-5" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="text-cyber-text-secondary hover:text-cyber-blue transition-colors">
+              <a href="https://www.facebook.com/trustybits" target="_blank" rel="noopener noreferrer" className="text-cyber-text-secondary hover:text-cyber-blue transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="text-cyber-text-secondary hover:text-cyber-blue transition-colors">
+              <a href="https://www.instagram.com/trustybits76/" target="_blank" rel="noopener noreferrer" className="text-cyber-text-secondary hover:text-cyber-blue transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="text-cyber-text-secondary hover:text-cyber-blue transition-colors">
+              <a href="https://x.com/trustybits76" target="_blank" rel="noopener noreferrer" className="text-cyber-text-secondary hover:text-cyber-blue transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="text-cyber-text-secondary hover:text-cyber-blue transition-colors">
+              <a href="https://www.linkedin.com/company/trustybits/" target="_blank" rel="noopener noreferrer" className="text-cyber-text-secondary hover:text-cyber-blue transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
