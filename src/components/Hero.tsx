@@ -79,7 +79,7 @@ export function Hero() {
                       <div className="w-3 h-3 rounded-full bg-cyber-blue"></div>
                       <div className="flex-1 text-right text-xs text-cyber-text-secondary font-mono">Trustybits</div>
                     </div>
-                    <div className="font-medieval text-xl text-center py-2 text-medieval-gold">Weekly Events</div>
+                    <div className="font-medieval text-xl text-center py-2 text-medieval-gold">Events</div>
                     <div className="space-y-3 mt-4">
                       <div className="flex items-center space-x-3 p-2 rounded bg-cyber-darkgray/50 border border-cyber-blue/10">
                         <div className="text-xs font-mono text-cyber-text-secondary">THU</div>
